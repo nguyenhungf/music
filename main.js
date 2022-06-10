@@ -24,54 +24,41 @@ const app = {
   config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
   songs: [
     {
-      name: "Bước Qua Mùa Cô Đơn",
-      singer: "Vũ",
-      path: "https://data3.chiasenhac.com/downloads/2139/3/2138662-e83f52bf/128/Buoc%20Qua%20Mua%20Co%20Don%20-%20Vu.mp3",
-      image: "https://i.ytimg.com/vi/n6Pnzi6r9NU/maxresdefault.jpg"
+      name: "Beat It",
+      singer: "Michael Jackson",
+      path: "./assets/music/beat_it.mp3",
+      image: "./assets/img/beat_it.jpg",
     },
     {
-      name: "Mang Tiền Về Cho Mẹ",
-      singer: "Đen",
-      path: "https://data.chiasenhac.com/down2/2215/3/2214701-52396a51/128/Mang%20Tien%20Ve%20Cho%20Me%20-%20Den_%20Nguyen%20Thao.mp3",
-      image:
-        "https://i.ytimg.com/vi/UVbv-PJXm14/maxresdefault.jpg"
+      name: "Attention",
+      singer: "Charlie Puth",
+      path: "./assets/music/attention.mp3",
+      image: "./assets/img/attention.jpg",
     },
     {
-      name: "3107-3",
-      singer: "Duongg,Nau",
-      path:
-        "https://data.chiasenhac.com/down2/2185/3/2184581-d20301b6/128/3107-3%20-%20W_n_%20Nau_%20Duongg_%20Titie.mp3",
-      image: "https://images.genius.com/3284c1c0f0756e2df61167e398cc667d.300x300x1.jpg"
+      name: "Natural",
+      singer: "Imagine Dragons",
+      path: "./assets/music/natural.mp3",
+      image: "./assets/img/natural.jpg",
     },
     {
-      name: "Có Chắc Yêu Là Đây",
-      singer: "Sơn Tùng MTP",
-      path: "https://data3.chiasenhac.com/downloads/2101/3/2100040/128/Co%20Chac%20Yeu%20La%20Day%20-%20Son%20Tung%20M-TP.mp4",
-      image:
-        "https://upload.wikimedia.org/wikipedia/vi/thumb/3/32/S%C6%A1n_T%C3%B9ng_M-TP_-_C%C3%B3_ch%E1%BA%AFc_y%C3%AAu_l%C3%A0_%C4%91%C3%A2y.jpg/220px-S%C6%A1n_T%C3%B9ng_M-TP_-_C%C3%B3_ch%E1%BA%AFc_y%C3%AAu_l%C3%A0_%C4%91%C3%A2y.jpg"
+      name: "Chery Chery Lady",
+      singer: "Modern Talking",
+      path: "./assets/music/Chery_chery_lady.mp3",
+      image: "./assets/img/Chery_chery_lady.jpg",
     },
     {
-      name: "Sau Lưng Anh Có Ai Kìa",
-      singer: "Thiều Bảo Trâm",
-      path: "https://data.chiasenhac.com/down2/2238/3/2237724-1570b544/128/Sau%20Lung%20Anh%20Co%20Ai%20Kia%20-%20Thieu%20Bao%20Tram.mp3",
-      image:
-        "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/1/8/0/7/1807c6b5fcc7058a14e1a288801221c7.jpg"
+      name: "Lối Nhỏ",
+      singer: "Đen Vâu",
+      path: "./assets/music/loinho.mp3",
+      image: "./assets/img/loi_nho.jpg",
     },
     {
-      name: "Cao Ốc 20",
-      singer: "B Ray, Đạt G",
-      path:
-        "https://data.chiasenhac.com/down2/2238/3/2237699-9a1dfedf/128/Cao%20Oc%2020%20-%20Dat%20G_%20B%20Ray_%20Masew_%20K-ICM.mp3",
-      image:
-        "https://i.ytimg.com/vi/FWYrRSWabIs/maxresdefault.jpg"
+      name: "Em Gì Ơi",
+      singer: "J97",
+      path: "./assets/music/emgioi.mp3",
+      image: "./assets/img/em_gi_oi.jpg",
     },
-    {
-      name: "Thương Em",
-      singer: "Châu Khải Phong",
-      path: "https://data.chiasenhac.com/down2/2245/3/2244199-86291010/128/Thuong%20Em%20-%20Chau%20Khai%20Phong_%20ACV.mp3",
-      image:
-        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
-    }
   ],
   setConfig: function (key, value) {
     this.config[key] = value;
